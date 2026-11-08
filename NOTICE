@@ -1,0 +1,69 @@
+# NOTICE
+
+This repository contains code and compiled data. The two have different
+provenance and licenses.
+
+## Code
+
+All code under `packages/`, `scripts/` and CI configuration is released under
+the MIT License (see `LICENSE`).
+
+## Data (`data/`, `dist/`)
+
+The compiled administrative dataset is a fusion of the following sources:
+
+### 1. Administrative structure, P-codes, polygons, areas, centroids, capitals
+
+Source: **OCHA COD-AB — "Mauritania - Subnational Administrative Boundaries"**
+<https://data.humdata.org/dataset/cod-ab-mrt> (dataset version of January 2026).
+
+- License: Creative Commons Attribution 4.0 International (CC-BY 4.0)
+- © United Nations Office for the Coordination of Humanitarian Affairs (OCHA),
+  derived from official Mauritanian administrative sources.
+- Portions of the underlying geometry may originate from OpenStreetMap and are
+  © OpenStreetMap contributors under the Open Database License (ODbL 1.0)
+  <https://opendatacommons.org/licenses/odbl/1-0/>.
+
+Known deviations we deliberately corrected (documented for transparency):
+
+- OCHA lists commune `Teyaret` under moughataa `Toujounine` and commune
+  `Toujounine` under moughataa `Teyarett`. French and English Wikipedia
+  ("Departments of Mauritania") confirm each commune belongs to the
+  same-named moughataa; `mauritania-geo` applies this fix.
+- Commune P-codes of the three Nouakchott wilayas in the OCHA file follow a
+  legacy scheme (`MR013xx`); `mauritania-geo` therefore assigns its own stable
+  6-digit codes (see README §Identifiers) and keeps the OCHA P-code in
+  `p_code` for traceability.
+- The moughataa OCHA calls `Lexeibe 1` is written `Lexeiba 1` following
+  French Wikipedia / citypopulation.de; both forms are searchable.
+
+### 2. ISO 3166-2 codes
+
+Source: ISO 3166-2:MR (ISO 3166 Maintenance Agency — Online Browsing Platform,
+<https://www.iso.org/obp/ui/#iso:code:3166:MR>). ISO country/region codes are
+facts and not copyrightable; the list was cross-checked against
+en.wikipedia.org/wiki/ISO_3166-2:MR and fr.wikipedia.org/wiki/ISO_3166-2:MR.
+MR-13/14/15 (Nouakchott-Ouest/Nord/Sud) were added and MR-NKC deleted by the
+ISO newsletter of 27 November 2015.
+
+### 3. French canonical spellings
+
+Cross-checked between French Wikipedia (CC-BY-SA 4.0) and
+<https://www.citypopulation.de/en/mauritania/> (Thomas Brinkhoff, fair-use
+reference). Where the two agreed on a different transliteration than OCHA's,
+the Wikipedia/citypopulation spelling is used and the OCHA spelling is kept
+as a searchable alias.
+
+### 4. Arabic names
+
+From Arabic Wikipedia (CC-BY-SA 4.0): the 15 wilaya articles
+(ولاية الحوض الشرقي, ولاية العصابة, …), مقاطعات موريتانيا and per-moughataa
+commune lists. Arabic names are missing for 1 moughataa (Touil) and 56
+communes (mostly post-2018/2021 creations without Arabic Wikipedia articles);
+these carry `name_ar: null` and are marked in `dist/meta.json`.
+
+## Contributing data
+
+When adding or correcting names, cite the source (official gazette / decree /
+Wikipedia URL) in the pull request description, following
+`CONTRIBUTING.md`.

@@ -1,0 +1,16 @@
+﻿code,p_code,iso_code,name_fr,name_ar,name_en,capital,capital_ar,capital_latitude,capital_longitude,latitude,longitude,area_sqkm,moughataas_count,communes_count,aliases
+01,MR01,MR-01,Hodh Ech Chargui,الحوض الشرقي,Hodh Ech Chargui,Néma,النعمة,16.6162,-7.2535,18.652919,-7.13171,182159.3,8,37,"Hodh Chargui, Hodh El Chargui, Hodh ech Chargui"
+02,MR02,MR-02,Hodh El Gharbi,الحوض الغربي,Hodh El Gharbi,Aïoun El Atrouss,عيون العتروس,16.6614,-9.6149,16.570437,-9.733858,50248.0,5,29,Hodh el Gharbi
+03,MR03,MR-03,Assaba,العصابة,Assaba,Kiffa,كيفة,16.616587,-11.404531,16.713052,-11.856178,35984.5,5,26,
+04,MR04,MR-04,Gorgol,كوركول,Gorgol,Kaédi,كيهيدي,16.14653,-13.504739,15.946725,-12.676335,13600.2,5,31,
+05,MR05,MR-05,Brakna,البراكنة,Brakna,Aleg,ألاك,17.0481,-13.9209,17.293094,-13.279267,33326.6,6,24,
+06,MR06,MR-06,Trarza,الترارزة,Trarza,Rosso,روصو,16.510278,-15.914167,17.517313,-15.054011,65765.4,7,27,
+07,MR07,MR-07,Adrar,أدرار,Adrar,Atar,أطار,20.516864,-13.049865,21.434095,-9.561452,221932.2,4,11,آدرار
+08,MR08,MR-08,Dakhlet Nouadhibou,داخلة نواذيبو,Dakhlet Nouadhibou,Nouadhibou,نواذيبو,20.900237,-17.033612,20.16794,-15.891914,37796.6,2,6,"Dakhlet Nouadhibou, Dakhlet Nouâdhibou"
+09,MR09,MR-09,Tagant,تكانت,Tagant,Tidjikja,تجكجة,18.555,-11.4256,18.434431,-10.560963,98199.4,3,10,
+10,MR10,MR-10,Guidimakha,كيدي ماغا,Guidimakha,Sélibaby,سيليبابي,15.158946,-12.182897,15.388958,-12.205556,10817.5,4,22,"Guidimagha, Guidimaka, كيديماكا"
+11,MR11,MR-11,Tiris Zemmour,تيرس زمور,Tiris Zemmour,Zouérat,الزويرات,22.71873,-12.452053,23.892353,-9.58719,257991.0,3,3,
+12,MR12,MR-12,Inchiri,إينشيري,Inchiri,Akjoujt,أكجوجت,19.696944,-14.416389,19.690499,-14.804689,31578.4,2,3,إنشيري
+13,MR13,MR-13,Nouakchott-Ouest,نواكشوط الغربية,Nouakchott-Ouest,Nouakchott,نواكشوط,18.0785,-15.9658,18.305319,-15.973985,624.3,3,3,Nouakchott Ouest
+14,MR14,MR-14,Nouakchott-Nord,نواكشوط الشمالية,Nouakchott-Nord,Nouakchott,نواكشوط,18.0785,-15.9658,18.102015,-15.894585,218.7,3,3,Nouakchott Nord
+15,MR15,MR-15,Nouakchott-Sud,نواكشوط الجنوبية,Nouakchott-Sud,Nouakchott,نواكشوط,18.0785,-15.9658,17.943239,-15.939891,341.8,3,3,Nouakchott Sud

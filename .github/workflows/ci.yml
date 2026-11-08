@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate-data:
+    name: Validate dataset
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: build.py --check
+        run: python scripts/build.py --check
+
+  python-package:
+    name: Python 3.10–3.13
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install (editable)
+        run: pip install -e packages/python
+      - name: Unit tests
+        run: python -m unittest discover -s packages/python/tests -v
+
+  typescript-package:
+    name: TypeScript (Node 18/20/22)
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: ["18", "20", "22"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install
+        run: npm install --no-audit --no-fund
+        working-directory: packages/typescript
+      - name: Build + unit tests
+        run: npm test
+        working-directory: packages/typescript

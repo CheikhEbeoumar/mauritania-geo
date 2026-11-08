@@ -1,0 +1,64 @@
+﻿code,p_code,name_fr,name_ar,name_en,wilaya_code,capital,latitude,longitude,area_sqkm,communes_count,aliases
+0101,MR011,Amourj,آمرج,Amourj,01,Amourj,15.839616,-7.39164,3794.3,5,
+0102,MR012,Bassikounou,باسكنو,Bassikounou,01,Bassikounou,16.171027,-6.086062,12271.5,4,"Basseknou, Bassiknou"
+0103,MR013,Djiguenni,جكني,Djiguenni,01,Djiguenni,16.018554,-8.784557,5234.3,7,
+0104,MR014,Néma,النعمة,Nema,01,Néma,16.360395,-7.332555,9449.4,10,Nema
+0105,MR015,Oualata,ولاتة,Oualata,01,Oualata,19.887387,-6.924181,106804.6,2,Walata
+0106,MR016,Timbedra,تمبدغة,Timbedra,01,Timbedra,16.218442,-8.215615,11405.6,5,"Tembedgha, Timbedgha, Timbédra"
+0107,MR017,N'Beiket Lehwach,انبيكت لحواش,N'Beiket Lehwach,01,N'Beiket Lehwach,18.548601,-6.107496,27882.1,1,Nbeiket Lahouach
+0108,MR018,Adel Bagrou,عدل بكرو,Adel Bagrou,01,Adel Bagrou,15.808708,-6.653201,5317.5,3,Edel Bagrou
+0201,MR021,Aïoun,العيون,Aioun,02,Aïoun El Atrouss,16.727068,-9.271891,17746.6,7,"Aioun, Aïoun El Atrouss"
+0202,MR022,Kobeni,كوبني,Kobeni,02,Kobeni,15.902379,-9.452325,8923.7,7,"Kobenni, Koubeni"
+0203,MR023,Tamchekett,تامشكط,Tamchekett,02,Tamchekett,17.11698,-10.443433,13249.4,5,Tamcheket
+0204,MR024,Tintane,الطينطان,Tintane,02,Tintane,16.109722,-10.34489,7993.7,6,Tintan
+0205,MR025,Touil,,Touil,02,Touil,15.556315,-10.253931,2334.6,4,
+0301,MR031,Barkewol,باركيول,Barkewol,03,Barkewol,16.642118,-12.442578,6448.7,8,"Barkeol, Barkéol"
+0302,MR032,Boumdeid,بومديد,Boumdeid,03,Boumdeid,17.743825,-11.278751,4324.0,3,
+0303,MR033,Guerou,كرو,Guerou,03,Guerou,16.875725,-11.929309,2800.7,4,Guérou
+0304,MR034,Kankossa,كنكوصة,Kankossa,03,Kankossa,15.71254,-11.146208,10369.3,5,Kankoussa
+0305,MR035,Kiffa,كيفة,Kiffa,03,Kiffa,16.690094,-11.322743,12041.8,6,
+0401,MR041,Kaédi,كيهيدي,Kaedi,04,Kaédi,15.957644,-12.899858,2355.1,5,Kaedi
+0402,MR042,Maghama,مقامة,Maghama,04,Maghama,15.534099,-12.853876,2275.5,8,
+0403,MR043,M'Bout,امبود,M'Bout,04,M'Bout,16.014445,-12.377287,5504.0,9,"M'Boud, Mbout"
+0404,MR044,Monguel,مونكل,Monguel,04,Monguel,16.487494,-12.96706,1694.6,5,Mounguel
+0405,MR045,Lexeiba 1,لكصيبة,Lexeiba 1,04,Lexeiba 1,16.174366,-13.062166,1771.0,4,"Lexeiba, Lexeibe, Lexeibe 1"
+0501,MR051,Aleg,ألاك,Aleg,05,Aleg,17.218296,-13.806328,8459.5,4,
+0502,MR052,Bababé,بابابي,Bababe,05,Bababé,16.456551,-13.948116,1189.1,3,Bababe
+0503,MR053,Boghé,بوغي,Boghe,05,Boghé,16.651964,-14.374918,1722.2,4,"Boghe, Boké"
+0504,MR054,Magta-Lahjar,مقطع لحجار,Magta-Lahjar,05,Magta-Lahjar,17.650144,-13.061418,13815.7,4,"Magtalahjar, Moughataa Magta-Lahjar"
+0505,MR055,M'Bagne,أمباني,M'Bagne,05,M'Bagne,16.272506,-13.773378,671.7,4,Mbagne
+0506,MR056,Mal,مال,Mal,05,Mal,16.804472,-13.280973,7468.3,5,"Maal, Male"
+0601,MR061,Boutilimit,بوتلميت,Boutilimit,06,Boutilimit,17.909059,-14.32806,32499.2,7,
+0602,MR062,Keur Macène,كرمسين,Keur Macene,06,Keur Macène,16.527503,-16.30949,2576.8,3,"Keur Macen, Keur Massene, Keur-Macene, Keurmassene"
+0603,MR063,Mederdra,المذرذرة,Mederdra,06,Mederdra,17.119655,-15.77141,6472.4,5,Mederdrea
+0604,MR064,Ouad Naga,واد الناقة,Ouad Naga,06,Ouad Naga,18.116507,-15.422197,17674.0,3,Wad Naga
+0605,MR065,R'Kiz,الركيز,R'Kiz,06,R'Kiz,17.107258,-14.99718,2838.3,3,RKiz
+0606,MR066,Rosso,روصو,Rosso,06,Rosso,16.654494,-15.697867,1407.0,2,
+0607,MR067,Tékane,تيكان,Tekane,06,Tékane,16.742017,-15.169943,2297.9,4,"Tekane, Tekani"
+0701,MR071,Aoujeft,أوجفت,Aoujeft,07,Aoujeft,19.555076,-13.216001,24516.7,4,
+0702,MR072,Atar,أطار,Atar,07,Atar,20.624721,-13.432696,21678.6,4,
+0703,MR073,Chinguetti,شنقيط,Chinguetti,07,Chinguetti,20.156509,-10.244933,57704.2,2,"Chinguitti, Shinqit"
+0704,MR074,Ouadane,وادان,Ouadane,07,Ouadane,22.359996,-8.129848,118032.6,1,Wadan
+0801,MR081,Nouadhibou,نواذيبو,Nouadhibou,08,Nouadhibou,20.924208,-15.948731,15126.7,3,
+0802,MR082,Chami,الشامي,Chami,08,Chami,20.16794,-15.891914,22669.9,3,
+0901,MR091,Tidjikja,تجكجة,Tidjikja,09,Tidjikja,17.988161,-12.137435,11944.0,3,Tidjikdja
+0902,MR092,Tichitt,تيشيت,Tichitt,09,Tichitt,18.537442,-9.729587,67015.2,2,Tichit
+0903,MR093,Moudjeria,المجرية,Moudjeria,09,Moudjeria,18.440763,-11.550406,19240.2,5,
+1001,MR101,Sélibaby,سيليبابي,Selibaby,10,Sélibaby,15.624127,-11.901719,3553.9,7,"Selibaby, Sélibabi"
+1002,MR102,Ould Yengé,ولد ينج,Ould Yenge,10,Ould Yengé,15.482825,-12.180257,1677.7,4,Ould Yenge
+1003,MR103,Ghabou,غابو,Ghabou,10,Ghabou,15.029399,-12.173516,3383.0,6,
+1004,MR104,Wompou,وامبو,Wompou,10,Wompou,15.365561,-12.475605,2202.9,5,
+1101,MR111,Bir Moghreïn,بير أم اكرين,Bir Moghrein,11,Bir Moghreïn,26.16267,-7.695426,87387.6,1,"Bir Moghrein, Bir Moughrein, Birmoguren"
+1102,MR112,F'Derick,افديرك,F'Derick,11,F'Derick,23.199471,-10.604567,169905.3,1,"F'Dérik, Fderick"
+1103,MR113,Zouerate,الزويرات,Zouerate,11,Zouerate,22.726014,-12.352553,698.1,1,"Zoueirat, Zoueratt, Zouérat"
+1201,MR121,Akjoujt,أكجوجت,Akjoujt,12,Akjoujt,19.9057,-14.240971,13419.6,1,
+1202,MR122,Bennechab,بنشاب,Bennechab,12,Bennechab,19.550103,-15.152655,18158.8,2,
+1301,MR131,Ksar,لكصر,Ksar,13,Ksar,18.330332,-15.931421,273.5,1,"Kiyar, القصر"
+1302,MR132,Tevragh Zeina,تفرغ زينة,Tevragh Zeina,13,Tevragh Zeina,18.299838,-16.016066,335.0,1,"Tefragh Zeina, Tevragh Zeïna"
+1303,MR133,Sebkha,السبخة,Sebkha,13,Sebkha,18.077075,-16.007681,15.8,1,
+1401,MR141,Toujounine,توجنين,Toujounine,14,Toujounine,18.17141,-15.92945,55.7,1,
+1402,MR142,Dar Naim,دار النعيم,Dar Naim,14,Dar Naim,18.12152,-15.912391,42.8,1,Dar Naïm
+1403,MR143,Teyarett,تيارت,Teyarett,14,Teyarett,18.066541,-15.887726,120.1,1,Teyaret
+1501,MR151,El Mina,الميناء,El Mina,15,El Mina,17.946311,-16.005493,152.8,1,Elmina
+1502,MR152,Arafat,عرفات,Arafat,15,Arafat,18.054396,-15.958632,15.1,1,
+1503,MR153,Riad,الرياض,Riad,15,Riad,17.970917,-15.908437,173.9,1,Riyadh

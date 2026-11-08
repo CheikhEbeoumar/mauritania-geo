@@ -1,0 +1,61 @@
+{
+  "name": "mauritania-geo",
+  "version": "1.0.0",
+  "description": "The definitive, zero-runtime-dependency geospatial & administrative dataset for Mauritania: 15 wilayas, 63 moughataas, 238 communes, historical era views and cross-script search.",
+  "keywords": [
+    "mauritania",
+    "moritania",
+    "wilaya",
+    "moughataa",
+    "commune",
+    "geojson",
+    "svg-map",
+    "administrative-divisions",
+    "geospatial",
+    "dataset",
+    "arabic",
+    "french"
+  ],
+  "license": "MIT",
+  "author": "mauritania-geo contributors",
+  "homepage": "https://github.com/cheikhEbeoumar/mauritania-geo",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cheikhEbeoumar/mauritania-geo.git",
+    "directory": "packages/typescript"
+  },
+  "sideEffects": false,
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/esm/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    },
+    "./map": {
+      "types": "./dist/esm/map.d.ts",
+      "import": "./dist/esm/map.js",
+      "require": "./dist/cjs/map.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig.cjs.json && node -e \"const fs=require('fs');fs.writeFileSync('dist/esm/package.json',JSON.stringify({type:'module'}));fs.writeFileSync('dist/cjs/package.json',JSON.stringify({type:'commonjs'}))\"",
+    "test": "npm run build && node --test",
+    "prepack": "npm run build",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}

@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+venv/
+.venv/
+.pytest_cache/
+
+# Build outputs
+packages/python/dist/
+packages/typescript/dist/
+
+# Node / TypeScript
+node_modules/
+.npmrc
+
+# Editors / OS
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Large raw sources are NOT committed — fetch them via import_source.py
+work/
+raw/
+*.shp
+*.gdb

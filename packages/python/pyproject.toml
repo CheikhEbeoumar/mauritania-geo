@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mauritania-geo"
+version = "1.0.0"
+description = "The definitive, zero-runtime-dependency geospatial & administrative dataset for Mauritania: 15 wilayas, 63 moughataas, 238 communes, historical era views and cross-script search."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "mauritania-geo contributors" }]
+keywords = [
+  "mauritania", "wilaya", "moughataa", "commune", "geospatial",
+  "administrative-divisions", "geojson", "svg-map", "arabic", "french",
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering :: GIS",
+  "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://github.com/cheikhEbeoumar/mauritania-geo"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+mauritania_geo = ["py.typed"]

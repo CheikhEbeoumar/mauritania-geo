@@ -1,0 +1,65 @@
+{
+ "dataset": "mauritania-geo",
+ "version": "1.0.0",
+ "generated_at": "2026-11-04",
+ "counts": {
+  "wilayas": 15,
+  "moughataas": 63,
+  "communes": 238
+ },
+ "coverage": {
+  "wilayas_name_ar": 15,
+  "moughataas_name_ar": 62,
+  "communes_name_ar": 182,
+  "communes_with_coordinates": 238
+ },
+ "eras": {
+  "13": "pre-2014 view — 13 wilayas (unified Nouakchott district)",
+  "15": "current view — 15 wilayas (default)"
+ },
+ "history": {
+  "1990": {
+   "instrument": "décret n° 90-124 du 10 septembre 1990",
+   "effect": "Nouakchott district organized into 9 moughataas"
+  },
+  "2014": {
+   "instrument": "décret du 25 novembre 2014 (Conseil des ministres)",
+   "effect": "Nouakchott district split into 3 wilayas: Nord, Ouest, Sud (ISO 3166-2 newsletter 2015-11-27 added MR-13/14/15, deleted MR-NKC)"
+  },
+  "2018": {
+   "instrument": "2018 decrees (moughataa/commune creations)",
+   "effect": "new moughataas and communes across several wilayas"
+  },
+  "2021": {
+   "instrument": "décret du 8 septembre 2021 and related decrees",
+   "effect": "six new moughataas (Adel Bagrou, N'Beiket Lehwach, Touil, Lexeiba 1, Mal, Tékane, Ghabou, Wompou, Bennechab) and new communes"
+  }
+ },
+ "sources": {
+  "structure_and_geometry": {
+   "name": "OCHA COD-AB — Mauritania Subnational Administrative Boundaries",
+   "url": "https://data.humdata.org/dataset/cod-ab-mrt",
+   "license": "Creative Commons Attribution 4.0 International (CC-BY 4.0)",
+   "attribution": "© OCHA / official Mauritanian sources",
+   "used_for": "hierarchy, P-codes, polygons, areas, centroids, capitals"
+  },
+  "iso_codes": {
+   "name": "ISO 3166-2:MR",
+   "url": "https://www.iso.org/obp/ui/#iso:code:3166:MR",
+   "license": "ISO 3166 codes (facts)",
+   "used_for": "ISO 3166-2 codes MR-01..MR-15 (MR-NKC deleted 2015-11-27)"
+  },
+  "french_spellings": {
+   "name": "French Wikipedia + citypopulation.de",
+   "url": "https://fr.wikipedia.org/wiki/Subdivisions_de_la_Mauritanie",
+   "license": "CC-BY-SA 4.0 / public reference",
+   "used_for": "canonical French spellings verification"
+  },
+  "arabic_names": {
+   "name": "Arabic Wikipedia",
+   "url": "https://ar.wikipedia.org/wiki/%D9%85%D9%88%D8%B1%D9%8A%D8%AA%D8%A7%D9%86%D9%8A%D8%A7",
+   "license": "CC-BY-SA 4.0",
+   "used_for": "Arabic names of wilayas, moughataas and communes"
+  }
+ }
+}

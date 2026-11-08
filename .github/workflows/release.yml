@@ -1,0 +1,74 @@
+name: Release
+
+# Publishes both packages to the npm registry and PyPI when a version tag
+# is pushed. Both jobs use trusted publishing (OIDC) - no registry tokens.
+# See docs/PUBLISHING.md for the one-time setup.
+
+on:
+  push:
+    tags: ["v*.*.*"]
+  workflow_dispatch:
+
+jobs:
+  publish-npm:
+    name: Publish to npm
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write   # required for npm trusted publishing (OIDC)
+    defaults:
+      run:
+        working-directory: packages/typescript
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          registry-url: "https://registry.npmjs.org"
+      - name: Ensure npm supports trusted publishing
+        run: npm install -g npm@^11.5.1
+      - name: Verify tag matches package version
+        run: node -e "const p=require('./package.json');const t=process.env.GITHUB_REF_NAME.slice(1);if(p.version!==t){console.error('tag v'+t+' != package.json '+p.version);process.exit(1)}"
+        env:
+          GITHUB_REF_NAME: ${{ github.ref_name }}
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+      - name: Build + unit tests
+        run: npm test
+      - name: Review tarball contents
+        run: npm pack --dry-run
+      - name: Publish (trusted publishing)
+        # No NODE_AUTH_TOKEN: npm exchanges the GitHub OIDC token for a
+        # short-lived publish credential. Configure the trusted publisher
+        # for this repo on npmjs.com (see docs/PUBLISHING.md).
+        run: npm publish
+
+  publish-pypi:
+    name: Publish to PyPI
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write   # required for PyPI trusted publishing
+    defaults:
+      run:
+        working-directory: packages/python
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify tag matches package version
+        run: python -c "import tomllib,os;v=tomllib.load(open('pyproject.toml','rb'))['project']['version'];t=os.environ['GITHUB_REF_NAME'][1:];exit(0 if v==t else print(f'tag v{t} != pyproject {v}',file=__import__('sys').stderr) or 1)"
+        env:
+          GITHUB_REF_NAME: ${{ github.ref_name }}
+      - name: Unit tests
+        run: python -m unittest discover tests -v
+      - name: Build sdist + wheel
+        run: |
+          pip install --upgrade build
+          python -m build
+      - name: Publish (trusted publishing)
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          packages-dir: packages/python/dist
+        # Token-based alternative if trusted publishing is not configured:
+        #   password: ${{ secrets.PYPI_API_TOKEN }}
