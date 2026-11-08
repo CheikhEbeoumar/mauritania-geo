@@ -18,10 +18,10 @@
   ],
   "license": "MIT",
   "author": "mauritania-geo contributors",
-  "homepage": "https://github.com/cheikhEbeoumar/mauritania-geo",
+  "homepage": "https://github.com/CheikhEbeoumar/mauritania-geo",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cheikhEbeoumar/mauritania-geo.git",
+    "url": "git+https://github.com/CheikhEbeoumar/mauritania-geo.git",
     "directory": "packages/typescript"
   },
   "sideEffects": false,

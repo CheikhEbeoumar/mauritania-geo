@@ -6,7 +6,7 @@ English | [Français](README.fr.md) | [العربية](README.ar.md)
 
 *15 Wilayas, 63 Moughataas, and 238 Communes with a historical boundary view (13 wilayas, pre-2014) and cross-script search.*
 
-![CI](https://github.com/cheikhEbeoumar/mauritania-geo/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/CheikhEbeoumar/mauritania-geo/actions/workflows/ci.yml/badge.svg)
 ![PyPI](https://img.shields.io/pypi/v/mauritania-geo?logo=pypi&color=blue)
 ![npm](https://img.shields.io/npm/v/mauritania-geo?logo=npm&color=red)
 ![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)
@@ -94,7 +94,7 @@ poetry add mauritania-geo
 > automatically, no compilation step needed):
 >
 > ```bash
-> git clone https://github.com/cheikhEbeoumar/mauritania-geo.git
+> git clone https://github.com/CheikhEbeoumar/mauritania-geo.git
 > cd mauritania-geo
 > npm install ./packages/typescript   # Node.js / TypeScript
 > pip install ./packages/python       # Python

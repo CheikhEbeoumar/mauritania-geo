@@ -29,7 +29,7 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/cheikhEbeoumar/mauritania-geo"
+Homepage = "https://github.com/CheikhEbeoumar/mauritania-geo"
 
 [tool.setuptools.packages.find]
 where = ["src"]

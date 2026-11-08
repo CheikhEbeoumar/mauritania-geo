@@ -135,13 +135,13 @@ release):
 
 1. **npm** — <https://www.npmjs.com/package/mauritania-geo/access> →
    **Trusted publishing** → add a GitHub Actions publisher:
-   - Organization/user: `cheikhEbeoumar`
+   - Organization/user: `CheikhEbeoumar`
    - Repository: `mauritania-geo`
    - Workflow filename: `release.yml`
    - Environment: *(leave blank)*
 2. **PyPI** — <https://pypi.org/manage/project/mauritania-geo/settings/publishing/>
    → **Add a new publisher** → GitHub:
-   - Owner: `cheikhEbeoumar`
+   - Owner: `CheikhEbeoumar`
    - Repository: `mauritania-geo`
    - Workflow: `release.yml`
    - Environment: *(leave blank)*
@@ -184,7 +184,7 @@ always kept in lockstep because both wrap the same dataset snapshot.
 - [ ] `npm test` and `python -m unittest discover tests` green
 - [ ] npm account created, email verified, Granular token (Read/Write + Bypass 2FA) ready for manual publishes
 - [ ] PyPI account created, API token ready for the first manual upload
-- [ ] Trusted publishers configured on npm and PyPI (repo `cheikhEbeoumar/mauritania-geo`, workflow `release.yml`) — no CI secrets needed
+- [ ] Trusted publishers configured on npm and PyPI (repo `CheikhEbeoumar/mauritania-geo`, workflow `release.yml`) — no CI secrets needed
 - [ ] `npm pack --dry-run` reviewed (only `dist/`, README, LICENSE ship)
 - [ ] Tag pushed → both packages live → `npm install mauritania-geo` and
       `pip install mauritania-geo` now work for everyone
@@ -198,7 +198,7 @@ always kept in lockstep because both wrap the same dataset snapshot.
 For users who want the code before (or instead of) a registry release:
 
 ```bash
-git clone https://github.com/cheikhEbeoumar/mauritania-geo.git
+git clone https://github.com/CheikhEbeoumar/mauritania-geo.git
 cd mauritania-geo
 
 # Node.js / TypeScript — builds automatically on install

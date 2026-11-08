@@ -6,7 +6,7 @@
 
 *15 wilayas, 63 moughataas et 238 communes, avec une vue historique (13 wilayas, avant 2014) et une recherche multi-écritures.*
 
-![CI](https://github.com/cheikhEbeoumar/mauritania-geo/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/CheikhEbeoumar/mauritania-geo/actions/workflows/ci.yml/badge.svg)
 ![PyPI](https://img.shields.io/pypi/v/mauritania-geo?logo=pypi&color=blue)
 ![npm](https://img.shields.io/npm/v/mauritania-geo?logo=npm&color=red)
 ![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)
@@ -72,7 +72,7 @@ pip install mauritania-geo
 > directement depuis les sources (les builds sont automatiques) :
 >
 > ```bash
-> git clone https://github.com/cheikhEbeoumar/mauritania-geo.git
+> git clone https://github.com/CheikhEbeoumar/mauritania-geo.git
 > cd mauritania-geo
 > npm install ./packages/typescript   # Node.js / TypeScript
 > pip install ./packages/python       # Python

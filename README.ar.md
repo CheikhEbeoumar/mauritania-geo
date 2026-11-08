@@ -6,7 +6,7 @@
 
 *15 ولاية، 63 مقاطعة، و238 بلدية، مع عرض تاريخي للحدود (13 ولاية قبل 2014) وبحث عبر الصيغ اللغوية.*
 
-![CI](https://github.com/cheikhEbeoumar/mauritania-geo/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/CheikhEbeoumar/mauritania-geo/actions/workflows/ci.yml/badge.svg)
 ![PyPI](https://img.shields.io/pypi/v/mauritania-geo?logo=pypi&color=blue)
 ![npm](https://img.shields.io/npm/v/mauritania-geo?logo=npm&color=red)
 ![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)
@@ -70,7 +70,7 @@ pip install mauritania-geo
 > أيضًا التثبيت مباشرة من المصدر (البناء يتم تلقائيًا):
 >
 > ```bash
-> git clone https://github.com/cheikhEbeoumar/mauritania-geo.git
+> git clone https://github.com/CheikhEbeoumar/mauritania-geo.git
 > cd mauritania-geo
 > npm install ./packages/typescript   # Node.js / TypeScript
 > pip install ./packages/python       # Python
